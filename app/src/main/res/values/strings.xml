@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PhoneNumbers</string>
+    <string-array name="cities_ukraine">
+        <item> </item>
+        <item>Vinnytsia</item>
+        <item>Kiev</item>
+        <item>Odessa</item>
+        <item>Lvov</item>
+        <item>Dnepro</item>
+        <item>Kharkov</item>
+    </string-array>
+</resources>
