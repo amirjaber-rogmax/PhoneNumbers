@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinner, spinner2;
     private EditText phoneNumber;
     private Button submit;
-    private List<String> ukraineCities = null;
+    private List<String> ukraineServices = null;
     private String num;
 
     @Override
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     case 232:
                         int hideItem = 0;
                         spinner2.setEnabled(true);
-                        CustomAdapter adapter = new CustomAdapter(getApplicationContext(), android.R.layout.simple_spinner_item, ukraineCities, hideItem);
+                        CustomAdapter adapter = new CustomAdapter(getApplicationContext(), android.R.layout.simple_spinner_item, ukraineServices, hideItem);
                         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                         spinner2.setAdapter(adapter);
                         spinner2.setSelection(1);
@@ -168,14 +168,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initCityArrays() {
-        ukraineCities = new ArrayList<>();
-        ukraineCities.add(" ");
-        ukraineCities.add("Vinnytsia");
-        ukraineCities.add("Kiev");
-        ukraineCities.add("Odessa");
-        ukraineCities.add("Kharkov");
-        ukraineCities.add("Lvov");
-        ukraineCities.add("Dnepro");
+        ukraineServices = new ArrayList<>();
+        ukraineServices.add(" ");
+        ukraineServices.add("Life");
+        ukraineServices.add("KievStar");
+        ukraineServices.add("MTC");
     }
 
     private void askPermission(String permission, int requestCode) {
