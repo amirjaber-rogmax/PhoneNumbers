@@ -43,4 +43,14 @@
         android:layout_marginBottom="81dp"
         android:text="Submit" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="openViewPage"
+        android:layout_marginBottom="53dp"
+        android:text="View submitted messages" />
+
 </RelativeLayout>

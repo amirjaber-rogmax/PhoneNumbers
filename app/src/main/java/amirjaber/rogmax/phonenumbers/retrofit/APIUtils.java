@@ -7,7 +7,7 @@ public class APIUtils {
     public APIUtils() {
     }
 
-    private static final String API_URL = "http://192.168.31.197/phone/";
+    private static final String API_URL = "http://192.168.0.102/phones/";
 
     public static Facade getFacadeService() {
         return RetrofitClient.getRetrofit(API_URL).create(Facade.class);

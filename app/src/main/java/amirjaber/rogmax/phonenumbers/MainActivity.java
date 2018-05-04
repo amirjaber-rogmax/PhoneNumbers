@@ -1,6 +1,7 @@
 package amirjaber.rogmax.phonenumbers;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -125,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                     num = tempNum;
                 }
 
+
                 try {
                     SmsManager smsManager = SmsManager.getDefault();
                     smsManager.sendTextMessage(num, null, "Message received: Country: " + spinner.getSelectedItem().toString() + ", City " + spinner2.getSelectedItem().toString(), null, null);
@@ -136,6 +138,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void openViewPage(View view) {
+        Intent goToViewActivity = new Intent(MainActivity.this, ViewActivity.class);
+        startActivity(goToViewActivity);
     }
 
     @Override
